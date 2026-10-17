@@ -1,0 +1,41 @@
+{
+  "name": "sehatsaarthi",
+  "private": true,
+  "version": "1.0.0",
+  "description": "SehatSaarthi - Accessible Healthcare for Every Citizen (SIH 2026)",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "dev:server": "nodemon backend/src/server.js",
+    "seed": "node backend/src/seed.js",
+    "start": "node backend/src/server.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.7.5",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-async-handler": "^1.2.0",
+    "express-validator": "^7.2.0",
+    "helmet": "^7.1.0",
+    "i18next": "^26.4.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.0",
+    "postcss": "^8.4.41",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^17.0.13",
+    "react-router-dom": "^6.26.1",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3",
+    "tailwindcss": "^3.4.10",
+    "vite": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.4",
+    "nodemon": "^3.1.4"
+  }
+}

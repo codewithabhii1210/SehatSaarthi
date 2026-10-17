@@ -1,6 +1,13 @@
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+// Resolve content globs from this file's directory so Tailwind works no matter
+// which directory the build is invoked from (repo root on Vercel, frontend/ locally).
+const here = path.dirname(fileURLToPath(import.meta.url));
+
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,jsx}'],
+  content: [path.join(here, 'index.html'), path.join(here, 'src/**/*.{js,jsx}')],
   theme: {
     extend: {
       colors: {
